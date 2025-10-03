@@ -1,0 +1,376 @@
+.suggestion-chip {
+  align-items: center;
+  border-radius: 8px;
+  display: inline-flex;
+  height: 32px;
+  justify-content: center;
+  position: relative;
+
+  .state-layer {
+    align-items: center;
+    display: inline-flex;
+    flex: 0 0 auto;
+    gap: 8px;
+    height: 32px;
+    justify-content: center;
+    position: relative;
+
+    .leading-icon {
+      height: 18px !important;
+      left: unset !important;
+      position: relative !important;
+      top: unset !important;
+      width: 18px !important;
+    }
+  }
+
+  .label-text {
+    align-items: center;
+    display: flex;
+    font-family: "Roboto", Helvetica;
+    font-size: 14px;
+    font-weight: 500;
+    justify-content: center;
+    letter-spacing: 0.10px;
+    line-height: 20px;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: center;
+    white-space: nowrap;
+    width: fit-content;
+  }
+
+  &.hovered {
+    overflow: hidden;
+  }
+
+  &.pressed {
+    overflow: hidden;
+  }
+
+  &.disabled {
+    overflow: hidden;
+  }
+
+  &.dragged {
+    box-shadow: 0px 1px 3px #0000004c, 0px 4px 8px 3px #00000026;
+    overflow: hidden;
+  }
+
+  &.enabled {
+    overflow: hidden;
+  }
+
+  &.selected-false.enabled {
+    top: 19px;
+  }
+
+  &.hovered.elevated {
+    box-shadow: 0px 1px 3px 1px #00000026, 0px 1px 2px #0000004c;
+  }
+
+  &.selected-true.hovered {
+    background-color: #e8def8;
+    box-shadow: 0px 1px 3px 1px #00000026, 0px 1px 2px #0000004c;
+    top: 411px;
+  }
+
+  &.selected-false.disabled {
+    top: 299px;
+  }
+
+  &.selected-false.hovered {
+    top: 75px;
+  }
+
+  &.pressed.selected-true {
+    background-color: #e8def8;
+    box-shadow: 0px 2px 6px 2px #00000026, 0px 1px 2px #0000004c;
+    top: 523px;
+  }
+
+  &.pressed.elevated {
+    box-shadow: 0px 2px 6px 2px #00000026, 0px 1px 2px #0000004c;
+  }
+
+  &.focused.selected-true {
+    background-color: #e8def8;
+    top: 467px;
+  }
+
+  &.focused.selected-false {
+    top: 131px;
+  }
+
+  &.selected-true.dragged {
+    background-color: #e8def8;
+    top: 579px;
+  }
+
+  &.selected-true.disabled {
+    background-color: #49454f1a;
+    top: 635px;
+  }
+
+  &.disabled.elevated {
+    background-color: #49454f1a;
+  }
+
+  &.enabled.elevated {
+    box-shadow: 0px 1px 3px 1px #00000026, 0px 1px 2px #0000004c;
+  }
+
+  &.enabled.selected-true {
+    background-color: #e8def8;
+    top: 355px;
+  }
+
+  &.selected-false.dragged {
+    top: 243px;
+  }
+
+  &.focused.elevated {
+    box-shadow: 0px 1px 3px 1px #00000026, 0px 1px 2px #0000004c;
+  }
+
+  &.pressed.selected-false {
+    top: 187px;
+  }
+
+  &.outlined.selected-false {
+    border: 1px solid;
+  }
+
+  &.show-icon-false.outlined.hovered {
+    left: 28px;
+  }
+
+  &.outlined.focused.show-icon-true {
+    left: 299px;
+  }
+
+  &.outlined.show-icon-true.enabled {
+    left: 300px;
+  }
+
+  &.show-icon-false.focused.outlined {
+    left: 27px;
+  }
+
+  &.outlined.show-icon-true.hovered {
+    left: 299px;
+  }
+
+  &.outlined.focused.selected-false {
+    background-color: #fef7ff;
+    border-color: #cac4d0;
+  }
+
+  &.show-icon-false.outlined.disabled {
+    left: 26px;
+  }
+
+  &.outlined.selected-false.dragged {
+    background-color: #fef7ff;
+    border-color: #cac4d0;
+  }
+
+  &.pressed.selected-false.elevated {
+    background-color: #f7f2fa;
+  }
+
+  &.outlined.selected-false.hovered {
+    background-color: #fef7ff;
+    border-color: #cac4d0;
+  }
+
+  &.outlined.pressed.selected-false {
+    background-color: #fef7ff;
+    border-color: #cac4d0;
+  }
+
+  &.show-icon-false.pressed.elevated {
+    left: 164px;
+  }
+
+  &.outlined.show-icon-true.dragged {
+    left: 299px;
+  }
+
+  &.focused.selected-false.elevated {
+    background-color: #f7f2fa;
+  }
+
+  &.selected-false.hovered.elevated {
+    background-color: #f7f2fa;
+  }
+
+  &.show-icon-true.dragged.elevated {
+    left: 453px;
+  }
+
+  &.show-icon-false.hovered.elevated {
+    left: 164px;
+  }
+
+  &.show-icon-false.pressed.outlined {
+    left: 28px;
+  }
+
+  &.outlined.show-icon-true.pressed {
+    left: 300px;
+  }
+
+  &.show-icon-false.dragged.elevated {
+    left: 163px;
+  }
+
+  &.show-icon-false.outlined.dragged {
+    left: 27px;
+  }
+
+  &.show-icon-true.pressed.elevated {
+    left: 454px;
+  }
+
+  &.show-icon-false.focused.elevated {
+    left: 163px;
+  }
+
+  &.outlined.selected-false.disabled {
+    border-color: #1d1b201a;
+  }
+
+  &.show-icon-false.enabled.outlined {
+    left: 29px;
+  }
+
+  &.outlined.selected-false.enabled {
+    border-color: #cac4d0;
+  }
+
+  &.selected-false.elevated.enabled {
+    background-color: #f7f2fa;
+  }
+
+  &.outlined.show-icon-true.disabled {
+    left: 298px;
+  }
+
+  &.show-icon-true.disabled.elevated {
+    left: 452px;
+  }
+
+  &.focused.elevated.show-icon-true {
+    left: 453px;
+  }
+
+  &.show-icon-true.hovered.elevated {
+    left: 454px;
+  }
+
+  &.show-icon-false.enabled.elevated {
+    left: 165px;
+  }
+
+  &.show-icon-false.disabled.elevated {
+    left: 162px;
+  }
+
+  &.selected-false.dragged.elevated {
+    background-color: #f7f2fa;
+  }
+
+  &.show-icon-true.enabled.elevated {
+    left: 455px;
+  }
+
+  &.show-icon-true .state-layer {
+    padding: 6px 16px 6px 8px;
+  }
+
+  &.show-icon-false .state-layer {
+    padding: 6px 16px;
+  }
+
+  &.focused .state-layer {
+    border-radius: 8px;
+  }
+
+  &.selected-true.hovered .state-layer {
+    background-color: #4a445914;
+  }
+
+  &.selected-false.hovered .state-layer {
+    background-color: #49454f14;
+  }
+
+  &.pressed.selected-true .state-layer {
+    background-color: #4a44591a;
+  }
+
+  &.focused.selected-true .state-layer {
+    background-color: #4a44591a;
+  }
+
+  &.focused.selected-false .state-layer {
+    background-color: #49454f1a;
+  }
+
+  &.selected-true.dragged .state-layer {
+    background-color: #4a445929;
+  }
+
+  &.selected-false.dragged .state-layer {
+    background-color: #1d1b2029;
+  }
+
+  &.pressed.selected-false .state-layer {
+    background-color: #49454f1a;
+  }
+
+  &.disabled .label-text {
+    color: #1d1b20;
+    opacity: 0.38;
+  }
+
+  &.selected-false.enabled .label-text {
+    color: #49454f;
+  }
+
+  &.selected-false.dragged .label-text {
+    color: #49454f;
+  }
+
+  &.focused.selected-true .label-text {
+    color: #4a4459;
+  }
+
+  &.selected-true.hovered .label-text {
+    color: #4a4459;
+  }
+
+  &.pressed.selected-false .label-text {
+    color: #49454f;
+  }
+
+  &.focused.selected-false .label-text {
+    color: #49454f;
+  }
+
+  &.enabled.selected-true .label-text {
+    color: #4a4459;
+  }
+
+  &.selected-false.hovered .label-text {
+    color: #49454f;
+  }
+
+  &.selected-true.dragged .label-text {
+    color: #4a4459;
+  }
+
+  &.pressed.selected-true .label-text {
+    color: #4a4459;
+  }
+}

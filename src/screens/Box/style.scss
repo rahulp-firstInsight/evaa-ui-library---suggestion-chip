@@ -1,0 +1,19 @@
+.box {
+  height: 683px;
+  position: relative;
+  width: 565px;
+
+  .div {
+    border-radius: 16px;
+    height: 683px;
+    left: -6602px;
+    overflow: hidden;
+    position: fixed;
+    top: 5619px;
+    width: 565px;
+  }
+
+  .suggestion-chip-instance {
+    position: absolute !important;
+  }
+}
